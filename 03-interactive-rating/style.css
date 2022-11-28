@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 62.5%;
+}
+
+.container__section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+}
+
+.container {
+  width: 45rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #1b222c;
+  border-radius: 3.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.icon-star,
+.number {
+  width: 5.3rem;
+  height: 5.3rem;
+  margin: 2.5rem 0;
+  background-color: #25303c;
+  border-radius: 50%;
+  padding: 1.6rem;
+}
+
+.title,
+.thankyou-title {
+  font-size: 3.2rem;
+  margin: 3rem 0;
+}
+
+.description,
+.rate-number {
+  font-size: 1.8rem;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: .5rem;
+}
+
+.rate-number {
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+  font-size: 1.8rem;
+  text-align: center;
+  border: none;
+  color: hsl(217, 12%, 63%)
+}
+
+.number:hover {
+  background-color: hsl(216, 12%, 54%);
+  cursor: pointer;
+}
+
+.number:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit {
+  border: none;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: .25rem;
+  background-color: hsl(25, 97%, 53%);
+  padding: 1.5rem 14rem;
+  margin-bottom: 3.6rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: #fff;
+}
+
+/* Thankyou Page  */
+.thankyou-state {
+  width: 45rem;
+  height: 50rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rem auto;
+  background-color: #1b222c;
+  border-radius: 3.2rem;
+}
+
+.thankyou-img {
+
+  margin: 4rem 0;
+}
+
+.thankyou-selected {
+  margin-top: 2rem;
+  background-color: #25303c;
+  color: hsl(25, 97%, 53%);
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  font-size: 1.4rem;
+}
+
+.thankyou-result {
+  padding-right: 0.3rem;
+}
+
+.thankyou-paragraph {
+  font-size: 1.8rem;
+  margin: 0 5rem;
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+}
+
+/* desktop */
