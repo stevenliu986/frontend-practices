@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 20em;
+  height: 80em;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vehicle {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+
+.sedan {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  background-color: var(--bright-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: var(--very-dark-cyan);
+}
+
+.vehicle-icon,
+.desc {
+  margin: 1em 2em;
+}
+
+.learn-more {
+  margin: 0 2em 2em;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  padding: 0.75em 2em;
+  border-radius: 3em;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.learn-more.sedan {
+  color: var(--bright-orange);
+}
+
+.learn-more.suv {
+  color: var(--dark-cyan);
+}
+
+.learn-more.luxury {
+  color: var(--very-dark-cyan);
+}
+
+/* desktop */
+
+@media (min-width: 48em) {
+  .container {
+    width: 90vw;
+    height: 80em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .vehicle {
+    width: 16em;
+    height: 40vh;
+  }
+
+  .sedan {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5em;
+    background-color: var(--bright-orange);
+  }
+
+  .luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: var(--very-dark-cyan);
+  }
+
+  .learn-more {
+    margin: 0 2em 2em;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    padding: 0.75em 2em;
+    border-radius: 3em;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+}
