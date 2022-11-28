@@ -1,0 +1,82 @@
+@mixin qr-code-style(
+  $container-width: 30rem,
+  $container-height: 42rem,
+  $container-radius: 1.5rem
+) {
+  width: $container-width;
+  height: $container-height;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eee;
+  border-radius: $container-radius;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #207479;
+}
+
+.container {
+  @include qr-code-style;
+
+  .qr-code-img {
+    height: 26rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+  .attribution {
+    text-align: center;
+
+    .text-bold {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0.5rem 1rem;
+    }
+
+    .text-normal {
+      font-size: 1.4rem;
+      color: #888;
+      margin: 0.5rem 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .container {
+    @include qr-code-style(15rem, 28rem, 1rem);
+    .qr-code-img {
+      height: 13rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .attribution {
+      text-align: center;
+
+      .text-bold {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0.5rem 1rem;
+      }
+
+      .text-normal {
+        font-size: 0.7rem;
+        color: #888;
+        margin: 0.5rem 1rem;
+      }
+    }
+  }
+}
