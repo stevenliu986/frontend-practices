@@ -7,3 +7,7 @@
 ## 02 Product Preview Card
 
 ### Skills: HTML, CSS
+
+## 03 Interactive Rate
+
+### Skills: HTML, CSS, JS, HTML DOM
