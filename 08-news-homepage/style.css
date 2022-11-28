@@ -131,3 +131,12 @@ a {
   font-size: 1.2em;
   color: var(--grayish-blue);
 }
+
+/* mobile */
+@media (max-width: 25em) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr 9);
+  }
+}
