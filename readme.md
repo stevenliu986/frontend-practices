@@ -2,5 +2,8 @@
 
 ## 01 QR Code Component
 
-### skills
-#### CSS, Semantic HTML
+### skills: HTML, CSS
+
+## 02 Product Preview Card
+
+### Skills: HTML, CSS
