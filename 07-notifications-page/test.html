@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="box">我是顶部导航栏</div>
+  </header>
+  <div class="sk">秒杀</div>
+  <script>
+    let sk = document.querySelector(".sk");
+    let box = document.querySelector(".box");
+    // console.log(sk.offsetTop);
+    window.addEventListener("scroll", function () {
+      let scrollDistance = document.documentElement.scrollTop;
+      if (scrollDistance >= sk.offsetTop - 100) {
+        // alert("hello world!")
+        box.style.top = "0";
+      } else {
+        box.style.top = "-80px";
+      }
+    })
+  </script>
+</body>
+
+</html>
