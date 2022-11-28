@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  color: hsl(223, 47%, 23%);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  width: 37.5rem;
+  height: 75rem;
+  margin: 25rem auto;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.card>img {
+  width: 100%;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin: 2rem;
+  font-weight: 900;
+}
+
+.desc {
+  color: #8c8ea2;
+  margin: 0 4rem 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1.5rem;
+}
+
+.music-icon,
+.plan-detail {
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.plan-type {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.plan-price {
+  color: #8c8ea2;
+  font-size: 1.8rem;
+}
+
+.change {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.proceed-order {
+  border: none;
+  margin-top: 2rem;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 2rem 6.4rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.cancel-order {
+  border: none;
+  background-color: transparent;
+  margin-top: 2rem;
+  color: #8c8ea2;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* desktop */
+
+@media (min-width: 48rem) {
+  .container {
+    width: 90vw;
+    height: 60vh;
+    margin: 25rem auto;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+
+  .card {
+
+    width: 37.5rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+}
