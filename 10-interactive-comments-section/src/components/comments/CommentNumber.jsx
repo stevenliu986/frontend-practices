@@ -1,9 +1,11 @@
+import style from "./CommentNumber.module.css";
+
 const CommentNumber = () => {
   return (
     <div>
-      <p>+</p>
-      <p>12</p>
-      <p>-</p>
+      <p className={style.symbol}>+</p>
+      <p className={style.count}>12</p>
+      <p className={style.symbol}>-</p>
     </div>
   );
 };
