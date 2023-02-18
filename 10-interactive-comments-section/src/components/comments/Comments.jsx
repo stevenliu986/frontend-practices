@@ -1,5 +1,13 @@
+import CommentContent from "./CommentContent";
+import CommentNumber from "./CommentNumber";
+
 const Comments = () => {
-  return <div>Interactive Comments Section</div>;
+  return (
+    <div>
+      <CommentNumber />
+      <CommentContent />
+    </div>
+  );
 };
 
 export default Comments;
