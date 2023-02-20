@@ -12,10 +12,18 @@ const Header = () => {
     <Wrapper>
       <img src={logo} alt="logo" />
       <ul>
-        <li>HOME</li>
-        <li>CREW</li>
-        <li>DESTINATION</li>
-        <li>TECHNOLOGY</li>
+        <a href="#">
+          <li>HOME</li>
+        </a>
+        <a href="#">
+          <li>CREW</li>
+        </a>
+        <a href="#">
+          <li>DESTINATION</li>
+        </a>
+        <a href="#">
+          <li>TECHNOLOGY</li>
+        </a>
       </ul>
     </Wrapper>
   );
