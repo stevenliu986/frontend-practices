@@ -1,6 +1,5 @@
 import Header from "./components/header";
 import Travel from "./components/travel";
-import Explore from "./components/explore";
 import styled from "styled-components";
 import backgroundImage from "./assets/home/background-home-desktop.jpg";
 
@@ -18,7 +17,6 @@ function App() {
     <BackgroundImage>
       <Header />
       <Travel />
-      <Explore />
     </BackgroundImage>
   );
 }
