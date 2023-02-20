@@ -1,3 +1,9 @@
+import styled from "styled-components";
+
+const DetailContent = styled.div`
+  color: ;
+`;
+
 const Travel = () => {
   return (
     <div>
